@@ -4,7 +4,6 @@
  import { useState, useEffect } from "react"
   import Formulario from "./component/Formulario"
   import Resultado from "./component/Resultado"
-  import Spiner from "./component/Spiner"
   import ImagenCripto from "./img/imagen-criptos.png"
   
   
@@ -95,7 +94,7 @@ function App() {
         <Formulario 
           setMonedas= {setMonedas}
         />
-        {cargando && <Spiner />}
+        {cargando && "..."}
         {resultado.PRICE && <Resultado  resultado={resultado}/>}
         
 
